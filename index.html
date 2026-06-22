@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gvp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <div class="camera-container">
+      <video id="webcam" autoplay playsinline></video>
+      <div id="flash"></div>
+
+      <div class="viewfinder-corner top-left"></div>
+      <div class="viewfinder-corner top-right"></div>
+      <div class="viewfinder-corner bottom-left"></div>
+      <div class="viewfinder-corner bottom-right"></div>
+    </div>
+
+    <div id="status-text" class="status-text">foto kita blur...</div>
+
+    <div class="instruction">
+      <span class="emoji">✌️</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
